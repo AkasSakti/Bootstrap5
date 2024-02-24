@@ -1,0 +1,19 @@
+{
+  "name": "blog-bootstrap-5",
+  "version": "1.0.0",
+  "description": "Halaman Blog dengan Bootstrap 5 Alpha",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Yasya El Hakim",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0"
+  }
+}
