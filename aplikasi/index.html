@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bootstrap 5 | AkasSakti</title>
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Bootstrap-V Menu</a>
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Blog</a>
+          </li>
+        </ul>
+
+        <form class="d-flex mr-2">
+          <input class="form-control mr-2" type="search" placeholder="Pencarian" aria-label="Pencarian">
+          <button class="btn btn-outline-primary" type="submit">Pencarian</button>
+        </form>
+
+        <button class="btn btn-primary" id="daftarAkun">Daftar</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container my-5">
+    <div class="row d-flex justify-content-center">
+      <!-- Row untuk konten -->
+      <div class="col-12 col-lg-6">
+        <div class="card mb-4">
+          <img src="img/empat.jpg" class="card-img-top" alt="Penjelasan Tag b:comment pada Blogger">
+          <div class="card-body">
+            <h5 class="card-title">Penjelasan Tag b:comment pada Blogger</h5>
+            <p class="card-text">Elemen &lt;b:comment&gt; adalah suatu instruksi untuk menambahkan komentar pada dokumen HTML yang mana tidak akan terender atau muncul pada Browser. Komentar tidak akan terlihat oleh siapapun kecuali terdapat seseorang yang melihatnya melalui Inspect atau Page Source.</p>
+            <a href="#" class="btn btn-primary">Baca selanjutnya...</a>
+          </div>
+        </div>
+
+        <nav aria-label="Page navigation contoh">
+          <ul class="pagination">
+            <li class="page-item"><a class="page-link" href="#">Sebelumnya</a></li>
+            <li class="page-item"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Sidebar -->
+      <div class="col-12 col-lg-4">
+        <div class="card mb-4" >
+          <div class="card-body">
+            <h5>Langganan melalui Email</h5>
+            <form action="#">
+              <div class="input-group my-3">
+                <span class="input-group-text" id="email-at">@</span>
+                <input type="email" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="email-at" required>
+              </div>
+              <button type="submit" class="btn btn-block btn-primary">Langganan</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="card mb-4">
+          <div class="card-body">
+            <h5>Ikuti Kami di</h5>
+            <a href="https://www.facebook.com/" class="btn btn-secondary mr-2" data-toggle="tooltip" data-placement="top" title="Ikuti kami di Facebook">
+              Facebook
+            </a>
+            <a href="https://www.youtube.com/" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Ikuti kami di YouTube">
+              Youtube
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal" tabindex="-1" id="modalDaftarAkun">
+    <div class="modal-dialog">
+      <form action="#" class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Daftar Akun</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-3">
+            <label for="email" class="form-label">Alamat Email</label>
+            <input type="email" class="form-control" id="email" placeholder="nama@email.com" required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" required>
+          </div>
+          <div class="mb-3">
+            <label for="confirmPassword" class="form-label">Konfirmasi Password</label>
+            <input type="password" class="form-control" id="konfirmPassword" required>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Tutup</button>
+          <button type="submit" class="btn btn-primary">Daftar</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
